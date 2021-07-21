@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+E:\Users\User\Ada\AccessTypes_Ada\accesstypes.gpr
+20210721174854 92e4ce12a0e8eb929632e9b6de15c628
+[BOUND OBJECT FILES]
+E:\Users\User\Ada\AccessTypes_Ada\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LE:\Users\User\Ada\AccessTypes_Ada\obj\
+-LE:\Users\User\Ada\AccessTypes_Ada\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
