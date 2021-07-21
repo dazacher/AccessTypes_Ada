@@ -22,7 +22,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		9a337022 NE OO SU
+U main%b		main.adb		d6b38d27 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -77,7 +77,7 @@ D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D a-uncdea.ads		20210520051130 c3a8ac65 ada.unchecked_deallocation%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20210721181058 f76f092a main%b
+D main.adb		20210721182644 bbeff42f main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -134,24 +134,26 @@ D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z b b [main standard 4 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 23|1r6 2r6 5r23 6r23
+16K9*Ada 20e8 23|1r6 2r6 5r23 6r23 15r26 16r26
 X 9 a-textio.ads
 58K13*Text_IO 725e16 23|1w10 5r27 6r27
 X 12 a-tiflio.ads
 46k21*Float_IO 112e25 23|6r35
-82U14 Put 23|19s8[6]
+82U14 Put 23|22s8[6]
 X 17 a-tiinio.ads
 46k21*Integer_IO 108e27 23|5r35
-80U14 Put 23|17s8[5]
+80U14 Put 23|20s8[5] 26s8[5]
 X 20 a-uncdea.ads
-20u15*Unchecked_Deallocation 23|2w10
+20u15*Unchecked_Deallocation 23|2w10 15r30 16r30
 X 23 main.adb
-4U11*Main 4b11 20l5 20t9
-5K12 IIO[17|46] 17r4
-6K12 FIO[12|46] 19r4
-8P9 Int_Acc(integer) 10r17
-9i4 My_Var{integer} 16m18 16r18
-10p4 My_Int_Acc{8P9} 16m4 17r13
-12P9 Float_Acc(float) 13r19
-13p4 My_Float_Acc{12P9} 18m4 19r13
+4U11*Main 4b11 29l5 29t9
+5K12 IIO[17|46] 20r4 26r4
+6K12 FIO[12|46] 22r4
+8P9 Int_Acc(integer) 10r17 16r62
+9i4 My_Var{integer} 19m18 19r18
+10p4 My_Int_Acc{8P9} 19m4 20r13 25m4 26r13 27m9 27r9
+12P9 Float_Acc(float) 13r19 15r60
+13p4 My_Float_Acc{12P9} 21m4 22r13 24m9 24r9
+15U14 Free[20|20] 24s4
+16U14 Free[20|20] 27s4
 

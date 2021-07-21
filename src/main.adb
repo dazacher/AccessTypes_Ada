@@ -10,11 +10,20 @@ procedure Main is
    My_Int_Acc : Int_Acc;
    -- Pool Access
    type Float_Acc is access Float;
-   My_Float_Acc : Float_Acc := new Float'(5.0);
+   My_Float_Acc : Float_Acc; --:= new Float'(5.0);
+   --procedure Delete_Float is new Ada.Unchecked_Deallocation(FLoat, Float_Acc);
+   procedure Free is new Ada.Unchecked_Deallocation(Float, Float_Acc);
+   procedure Free is new Ada.Unchecked_Deallocation(Integer, Int_Acc);
 
 begin
    My_Int_Acc := My_Var'Access;
    IIO.Put (My_Int_Acc.all);
    My_Float_Acc := new Float'(30.0);
    FIO.Put (My_Float_Acc.all);
+   --  Delete_Float(My_Float_Acc);
+   Free(My_Float_Acc);
+   My_Int_Acc := new Integer'(15);
+   IIO.Put (My_Int_Acc.all);
+   Free(My_Int_Acc);
+
 end Main;
